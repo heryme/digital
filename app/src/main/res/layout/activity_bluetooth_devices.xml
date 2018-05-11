@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bluetooth_devices"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digitalscale.activity.BluetoothDevicesActivity">
+
+    <ImageView
+        android:id="@+id/ivBluetoothDeviceHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bt_head" />
+
+    <LinearLayout
+        android:id="@+id/llBluetoothDeviceSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBluetoothDeviceHeader"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBluetoothDeviceOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:text="@string/lbl_off"
+            android:textColor="@color/colorFontGry" />
+
+        <Switch
+            android:id="@+id/switchBluetoothDeviceOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llBluetoothDeviceSwitch"
+        android:background="@color/colorFontGry" />
+
+    <LinearLayout
+        android:id="@+id/llBluetoothDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/llBluetoothDeviceSwitch">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_title"
+            android:text="@string/lbl_available_devices" />
+
+        <ListView
+            android:id="@+id/lvBluetoothDeviceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorFontGry"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/ivBluetoothDeviceBack" />
+
+    <LinearLayout
+        android:id="@+id/llScanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/llBluetoothDeviceSwitch"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_title"
+            android:text="@string/lbl_scanning"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/lbl_no_device_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBluetoothOffMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:textSize="@dimen/txt_size_title"
+        android:visibility="gone"
+        android:id="@+id/tvBluetoothDeviceNoDeviceFound" />
+
+    <TextView
+        android:id="@+id/tvTapToScanDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBluetoothDeviceScanDevice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/lbl_tap_to_scan_device"
+        android:textSize="@dimen/txt_size_title"
+        android:textColor="@color/colorOrange"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvBluetoothDeviceScanDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lbl_bluetooth"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/txt_size_heading"
+        android:layout_below="@+id/ivBluetoothDeviceBack"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvBluetoothOffMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/msg.turn.on.bluetooth"
+        android:visibility="gone"
+        android:layout_below="@+id/llBluetoothDeviceSwitch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBluetoothDeviceSwitch"
+        android:layout_alignLeft="@+id/llBluetoothDeviceSwitch"
+        android:layout_alignStart="@+id/llBluetoothDeviceSwitch"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/txt_size_title"
+        android:textColor="@color/colorOrange"
+        android:id="@+id/tvBluetoothDeviceConnectionStatus" />
+</RelativeLayout>

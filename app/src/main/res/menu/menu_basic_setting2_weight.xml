@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_basic_setting_weight_kg"
+        android:title="kg (Kilogram)" />
+
+    <item
+        android:id="@+id/menu_basic_setting_weight_lb"
+        android:title="@string/lbl_pound" />
+
+
+</menu>

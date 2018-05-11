@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_weight_reading_gm"
+        android:title="gm (gram)" />
+    <item
+        android:id="@+id/menu_weight_reading_lb"
+        android:title="lb (Pound)" />
+    <item
+        android:id="@+id/menu_weight_reading_oz"
+        android:title="oz (Ounces)" />
+    <item
+        android:id="@+id/menu_weight_reading_ml"
+        android:title="ml (milliliter)" />
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "40215306202",
+    "project_id": "digital-scale"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40215306202:android:7d5a1381a300a9e4",
+        "android_client_info": {
+          "package_name": "com.digitalscale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40215306202-lc6eatgmtv050rkh6791h4jq1f47so1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalscale",
+            "certificate_hash": "8d3c021d25a85266d3113c73b1ca0f0322e327c3"
+          }
+        },
+        {
+          "client_id": "40215306202-b596jomf0gsej0r1m7vcda4h121jqqu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZsRBWgizYqpD0e75rIvsGRW8QEmNrVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

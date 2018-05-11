@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Weight Plate</string>
+
+    <string name="lbl_login">Login</string>
+    <string name="lbl_verify">Verifiera</string>
+    <string name="lbl_send_otp">Skicka OTP</string>
+    <!-- engångslösenordet -->
+    <string name="lbl_re_send_otp">Skicka OTP igen</string>
+    <string name="lbl_resend">Skicka igen</string>
+    <string name="lbl_email_verification">Epost verifikation</string>
+    <string name="lbl_forgot_password">Glömt lösenordet?</string>
+    <string name="lbl_create_account">Skapa nytt konto</string>
+    <string name="btn_lbl_signup">Registrera</string>
+    <string name="btn_lbl_next">Nästa</string>
+    <string name="btn_lbl_submit">Bekräfta</string>
+
+    <string name="lbl_contact_us">Kontakta oss</string>
+    <string name="lbl_tell_a_friends">Rekommendera en vän</string>
+    <string name="lbl_height">Längd</string>
+    <string name="lbl_ft">Foot</string>
+    <string name="lbl_in">Tum</string>
+    <string name="lbl_weight">Vikt</string>
+    <string name="lbl_kg">kg</string>
+    <string name="lbl_lb">lb</string>
+
+    <string name="lbl_date_of_birth">Födelsedatum</string>
+    <string name="lbl_gender">Kön</string>
+    <string name="lbl_male">Man</string>
+    <string name="lbl_female">Kvinna</string>
+    <string name="lbl_back">Tillbaka</string>
+    <string name="lbl_start">Start</string>
+    <string name="lbl_bluetooth">Bluetooth</string>
+    <string name="lbl_off">OFF</string>
+    <string name="lbl_on">ON</string>
+    <string name="lbl_available_devices">Tillgängliga enheter</string>
+    <string name="lbl_scanning">Skannar…</string>
+    <string name="lbl_no_device_found">Ingen enhet hittades</string>
+    <string name="lbl_tap_to_scan_device">Tryck för att skanna enheten</string>
+    <string name="lbl_please_check_your_email">Kontrollera din e-post</string>
+    <string name="lbl_Verification_Code">Verifierings kod</string>
+    <string name="lbl_forgot_password_title">Glömt ditt lösenord</string>
+    <string name="lbl_email_id">E-post ID</string>
+    <string name="lbl_password">Lösenord</string>
+    <string name="lbl_first_name">Förnamn</string>
+    <string name="lbl_last_name">Efternamn</string>
+    <string name="lbl_how_you_are_active">Hur aktiv är du?</string>
+    <string name="lbl_what_is_your_goal">Vad är ditt mål?</string>
+    <string name="lbl_oal_is_based_on_every_week">(Målet är baserat på varje vecka)</string>
+    <string name="lbl_reset_password">Återställ lösenord</string>
+    <string name="lbl_new_password">Nytt lösenord</string>
+    <string name="lbl_confirm_password">Bekräfta lösenord</string>
+    <string name="lbl_verify_otp">Verifiera engångslösenordet</string>
+    <string name="lbl_verification_code">Verifieringskod</string>
+    <string name="lbl_what_time_do_you_want_to_add">Vilken tid vill du lägga till?</string>
+    <string name="lbl_breakfast">Frukost</string>
+    <string name="lbl_lunch">Lunch</string>
+    <string name="lbl_Snacks">Snacks</string>
+    <string name="lbl_dinner">Middag</string>
+    <string name="lbl_goal">Mitt mål</string>
+    <string name="lbl_food">Mat</string>
+    <string name="lbl_remaining">Återstående</string>
+    <string name="lbl_today">I dag</string>
+    <string name="lbl_1_how_you_are_active">1. Hur aktiv är du?</string>
+    <string name="lbl_2_what_is_your_goal">2. Vad är ditt mål? (Målet är baserat på varje vecka)</string>
+    <string name="lbl_to_keep_weight">Att behålla vikten</string>
+    <string name="lbl_to_lose_weight">Att gå ner i vikt (per vecka)</string>
+    <string name="lbl_to_gain_weight">Att öka vikten (per vecka)</string>
+    <string name="lbl_cm">Centimeter</string>
+    <string name="lbl_location">Plats</string>
+    <string name="lbl_zip_code">Postnummer</string>
+    <string name="lbl_read_more">Läs mer...</string>
+    <string name="lbl_activity">AKTIVITET</string>
+    <string name="lbl_steps">STEG</string>
+    <string name="lbl_cal">CAL</string>
+    <string name="lbl_km">KM</string>
+    <string name="lbl_detail">Detalj</string>
+
+
+    <string name="nav_menu_home">Hem</string>
+    <string name="nav_menu_profile">Profil</string>
+    <string name="nav_menu_diary">Dagbok</string>
+    <string name="nav_menu_gole">Mitt mål</string>
+    <string name="nav_menu_logout">Logga ut</string>
+
+    <string name="dlg_title_app_close_alert_dialog">Avsluta</string>
+    <string name="dlg_msg_app_close_alert_dialog">Är du säker på att du vill stänga Appen?</string>
+
+    <string name="dlg_title_app_logout_alert_dialog">Logga ut</string>
+    <string name="dlg_msg_app_logout_alert_dialog">Är det säker att du vill logga ut?</string>
+
+    <!-- Social login ids -->
+    <string name="facebook_app_id">332278603833163</string>
+    <string name="fb_login_protocol_scheme">fb332278603833163</string>
+
+    <!-- Basic Detail -->
+    <string name="toast.error.gender.msg">Vänligen välj kön</string>
+    <string name="toast_error_birth_date_msg">Vänligen fyll i födelsedatumet</string>
+    <string name="toast_error_valid_birth_date_msg">Vänligen ange ett giltigt födelsedatum</string>
+
+    <!-- Add Food Activity -->
+    <string name="toast.msg.food.already.selected">Maten har redan valts</string>
+    <string name="toast.msg.reconnect.device">Anslut enheten igen</string>
+    <string name="toast.msg.add.at.least.one.food">Var god, välj minst en mat</string>
+
+    <!-- Splash Activity -->
+    <string name="toast.msg.Permission.denied.to.your.location">Tillstånd nekad till din plats</string>
+
+    <!-- Question2 Activity -->
+    <string name="toast.enter.weight">Vänligen ange vikt</string>
+    <string name="toast.select.option">Vänligen välj alternativ</string>
+    <string name="toast.lose.weight">Var god välj viktminskning</string>
+    <string name="toast.gain.option">Vänligen välj öka vikt</string>
+
+    <!--Fragment_Profile -->
+    <string name="btn_update_profile">Spara</string>
+    <string name="btn_change_pwd">Lösenord</string>
+
+    <string-array name="foot">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="inch">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <!-- Validation Utils-->
+    <string name="toast.select.inch">Vänligen välj tum</string>
+    <string name="toast.select.feet">Vänligen välj fötter</string>
+
+    <!-- Change Password -->
+
+    <!--  Text View  -->
+    <string name="tv_current_pwd">Nuvarande lösenord</string>
+    <string name="tv_new_pwd">Nytt lösenord</string>
+    <string name="tv_conform_pwd">Bekräfta lösenordet</string>
+
+    <!-- Bluetooth Device Activity -->
+    <string name="msg.turn.on.bluetooth">Slå på Bluetooth för att se listan över enheter som du kan para ihop med eller redan har kopplat till</string>
+    <string name="toast.msg.phone.does.not.support.bt">Förlåt !!! Din telefon stöder inte Bluetooth</string>
+
+
+    <!-- Update Profile Fragment-->
+    <string name="dialog.some.thing.wrong">Vänligen välj en annan bild från galleriet.</string>
+
+    <!--TabGoalFragment  -->
+    <string name="toast.select.option.tab.goal.fragment">Var god välj fråga nr.2 i alternativen</string>
+
+    <!-- Reset Password Activity -->
+    <string name="msg.confirm.password.must.be.same.as.new.password">Bekräftad lösenord måste vara samma som det nya lösenordet</string>
+    
+    <!--Email Verification -->
+    
+    <string name="btn_email_verification_back">&lt;&lt; Tillbaka</string>
+
+    <!-- TabGoalFragment -->
+    <string name="dialog_tab_goal_fragment_msg">Detta kommer att beräkna om dina kalorier och mål. Vill du spara dessa ändringar?</string>
+
+
+    <!-- new -->
+    <string name="msg_field_required">Detta fält är obligatoriskt</string>
+    <string name="msg_enter_valid_data">Ange giltiga data</string>
+    <string name="msg_space_is_not_allowed">Utrymmet är inte tillåtet</string>
+    <string name="msg_enter_valid_email">Ange giltigt e-postmeddelande</string>
+    <string name="msg_code_must_be_6_digits">Koden måste vara 6 siffror</string>
+    <string name="msg_confirm_password_does_not_match">Bekräfta lösenordet matchar inte</string>
+    <string name="msg_your_height_should_be">Din höjd ska vara 36 till 273 cm</string>
+    <string name="msg_password_must_be_6_digits">Lösenordet måste vara 6 siffror</string>
+    <string name="msg_this_field_is_required">Detta fält är obligatoriskt</string>
+
+    <string name="lbl_reset">Återställa</string>
+    <string name="lbl_pound">lb (Pund)</string>
+    <string name="lbl_feet_inch">ft (Foot and Tum)</string>
+
+
+    <!-- ================ -->
+    <string name="lbl_take_photo">Lägg till bild</string>
+    <string name="lbl_choose_from_gallery">Välj från album</string>
+    <string name="lbl_cancel">Avbryt</string>
+    <string name="lbl_disconnected">Anslut nu</string>
+    <string name="lbl_Connected">Ansluten</string>
+    <string name="lbl_add_to">Lägg till</string>
+    <string name="msg_last_15days_food_show">Förlåt !!! Du kan bara se senaste 15 dagars mathistorikdata från idag.</string>
+    <string name="toast_select_google_acc">"Du måste logga in på ditt google-konto, för att Appen ska kunna räkna Steg, Sträcka  &amp; Kalorier</string>
+    <string name="lbl_goal_activity">Mål och aktivitet</string>
+    <string name="lbl_tips">Tips</string>
+
+    <string name="lbl_llitel_or_no_execise">Lite eller ingen träning alls</string>
+    <string name="lbl_exercise_1_3_daysperweek">Tränar 1-3 dagar i veckan</string>
+    <string name="lbl_exercise_3_5_daysperweek">Tränar 3-5 dagar i veckan</string>
+    <string name="lbl_exercise_6_7_daysperweek">Tränar 5-7 dagar i veckan</string>
+    <string name="lbl_exercise_daily">Tränar dagligen</string>
+    <string name="toast_weight_plate_paired">Weight Plate Kopplad</string>
+    <string name="toast_weight_plate_un_paired">Weight plate Unpaired</string>
+    <string name="toast_connecting_to_device">Kontaktar enheten</string>
+    <string name="toast_off_bt_and_on">Stäng Bluetoothen av &amp; på</string>
+    <string name="lbl_fill_your_basic_details">Fyll i dina grunddetaljer</string>
+
+</resources>

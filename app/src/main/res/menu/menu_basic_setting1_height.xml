@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_basic_setting1_cm"
+        android:title="cm (Centimeter)" />
+
+    <item
+        android:id="@+id/menu_basic_setting1_ft"
+        android:title="@string/lbl_feet_inch" />
+
+
+</menu>

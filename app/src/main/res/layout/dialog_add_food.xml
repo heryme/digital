@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_add_food_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_what_time_do_you_want_to_add"
+            android:textSize="@dimen/txt_size_title" />
+
+        <RelativeLayout
+            android:id="@+id/rlDialogAddFoodBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_break_fast">
+
+            <TextView
+                android:id="@+id/tvDialogAddFoodBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="@string/lbl_breakfast"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/add_food_dialog_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDialogAddFoodLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_lunch">
+
+            <TextView
+                android:id="@+id/tvDialogAddFoodLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="@string/lbl_lunch"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/add_food_dialog_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDialogAddFoodSnacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_snacks">
+
+            <TextView
+                android:id="@+id/tvDialogAddFoodSnacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="@string/lbl_Snacks"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/add_food_dialog_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDialogAddFoodDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_dinner">
+
+            <TextView
+                android:id="@+id/tvDialogAddFoodDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="@string/lbl_dinner"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/add_food_dialog_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

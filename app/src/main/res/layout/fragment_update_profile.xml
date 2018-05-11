@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_verify_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true">
+        <!--<com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_frg_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/colorWhite"
+            android:layout_marginTop="10dp"/>-->
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_frg_profile"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_male"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="2dp"
+            app:layout_scrollFlags="scroll" />
+
+        <ImageView
+            android:id="@+id/iv_frg_change_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/ic_edit"
+            android:layout_alignRight="@+id/iv_frg_profile"
+            android:layout_alignEnd="@+id/iv_frg_profile" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_frg_profile"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_frg_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_first_name"
+                android:textSize="@dimen/txt_size_title" />
+
+            <EditText
+                android:id="@+id/et_frg_first_name"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:textSize="@dimen/txt_size_title"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_frg_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_last_name"
+                android:textSize="@dimen/txt_size_title" />
+
+            <EditText
+                android:id="@+id/et_frg_last_name"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_size_title"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_update_profile_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_title"
+                android:text="@string/lbl_email_id" />
+
+
+            <TextView
+                android:id="@+id/tv_update_profile_email"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/txt_size_title"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorDarkGry"/>
+
+            <TextView
+                android:id="@+id/tv_frg_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/lbl_height"
+                android:textSize="@dimen/txt_size_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_frg_update_profile_height_cm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_frg_update_profile_cm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFontGry"
+                        android:maxLines="1"
+                        android:textSize="@dimen/txt_size_question"
+                        android:maxLength="3"
+                        android:background="#00000000"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <!-- Spinner view-->
+                <LinearLayout
+                    android:id="@+id/lv_frg_update_profile_ft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <Spinner
+                        android:id="@+id/sp_frg_profile_ft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/foot"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_frg_profile_ft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/lbl_ft"
+                        android:textSize="@dimen/txt_size_normal" />
+
+                    <Spinner
+                        android:id="@+id/spn_frg_profile_inch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/inch" />
+
+                    <TextView
+                        android:id="@+id/tv_frg_profile_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/lbl_in"
+                        android:textSize="@dimen/txt_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_frg_profile_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/txt_size_normal"
+                            android:text="@string/lbl_cm"
+                            android:textColor="@color/colorFontGry" />
+
+                        <ImageView
+                            android:id="@+id/iv_frg_profile_height_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_setting"
+                            android:textColor="@color/colorFontGry" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorDarkGry"/>
+
+            <TextView
+                android:id="@+id/tv_frg_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/lbl_weight"
+                android:textSize="@dimen/txt_size_title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_frg_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:textSize="@dimen/txt_size_title"
+                        android:background="#00000000"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_frg_profile_weight_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_kg"
+                        android:textSize="@dimen/txt_size_normal"
+                        android:textColor="@color/colorFontGry" />
+
+                    <ImageView
+                        android:id="@+id/iv_frg_profile_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_setting"
+                        android:layout_marginLeft="3dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorFontGry" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorDarkGry"/>
+
+            <TextView
+                android:id="@+id/tv_frg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/lbl_gender"
+                android:textSize="@dimen/txt_size_title" />
+
+            <RadioGroup
+                android:id="@+id/rd_frg_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/rb_frg_male"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_frg_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/lbl_male"
+                    android:textSize="@dimen/txt_size_title"
+                    android:textColor="@color/colorFontGry"/>
+
+                <RadioButton
+                    android:id="@+id/rb_frg_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_female"
+                    android:textSize="@dimen/txt_size_title"
+                    android:textColor="@color/colorFontGry"/>
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorDarkGry"/>
+
+            <TextView
+                android:id="@+id/tv_frg_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/lbl_date_of_birth"
+                android:textSize="@dimen/txt_size_title"  />
+
+            <TextView
+                android:id="@+id/tv_frg_birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="@dimen/txt_size_title"
+                android:hint="&lt;select date&gt;" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorDarkGry"/>
+
+
+            <TextView
+                android:id="@+id/tv_frg_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/lbl_location"
+                android:textSize="@dimen/txt_size_title"  />
+
+           <EditText
+                android:id="@+id/et_frg_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompTvUpdatePro"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_size_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_frg_zip_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_zip_code"
+                android:textSize="@dimen/txt_size_title"/>
+
+            <EditText
+                android:id="@+id/et_frg_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_title"
+                android:maxLength="6"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_frg_update_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorOrange"
+                android:textSize="@dimen/txt_size_title"
+                android:gravity="center"
+                android:text="@string/btn_update_profile"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_tab_goal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_frg_tab_goal_not_internet_conn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="No internet connection"
+                android:textSize="@dimen/txt_size_title" />
+
+            <Button
+                android:id="@+id/btn_frg_tab_goal_try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorOrange"
+                android:padding="10dp"
+                android:text="Please Try Again"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_frg_tab_goal_question_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/lbl_1_how_you_are_active"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/txt_size_heading" />
+
+            <LinearLayout
+                android:id="@+id/llQuestion1Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGry"
+                android:gravity="center"
+                android:orientation="vertical"/>
+
+            <!--Question 2 View -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvQue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:text="@string/lbl_2_what_is_your_goal"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/txt_size_heading" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvQue"
+                        android:gravity="center"
+                        android:text="(Goal is based on every week)"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/txt_size_normal"
+                        android:visibility="gone" />
+
+                    <!-- 1 st answer view -->
+                    <LinearLayout
+                        android:id="@+id/ll_act_question2_que1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_act_question2_que1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_unchecked" />
+
+                        <TextView
+                            android:id="@+id/tv_act_question2_que1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:paddingLeft="20dp"
+                            android:text="@string/lbl_to_keep_weight"
+                            android:textColor="@color/colorFontGry"
+                            android:textSize="@dimen/txt_size_title" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGry"></View>
+
+                    <!-- 2 st answer view -->
+                    <LinearLayout
+                        android:id="@+id/ll_act_question2_que2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGry"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_act_question2_que2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorGry"
+                                android:src="@drawable/ic_unchecked" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_activity_que2_child_lose_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_act_question2_que2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:paddingLeft="20dp"
+                                android:text="@string/lbl_to_lose_weight"
+                                android:textColor="@color/colorFontGry"
+                                android:textSize="@dimen/txt_size_title" />
+                            <!-- Inner view -->
+                            <LinearLayout
+                                android:id="@+id/ll_act_question2_que2_inner_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+                                <RadioGroup
+                                    android:id="@+id/rg_activity_question2_lose_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_lose_weight_250g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="250 g"
+                                        android:textColor="@color/colorFontGry"></RadioButton>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_lose_weight_500g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="500 g"
+                                        android:textColor="@color/colorFontGry"></RadioButton>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_lose_weight_750g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="750 g"
+                                        android:textColor="@color/colorFontGry"></RadioButton>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_lose_weight_1000g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="1000 g"
+                                        android:textColor="@color/colorFontGry"></RadioButton>
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGry"></View>
+                    <!-- 3 rd answer view -->
+                    <LinearLayout
+                        android:id="@+id/ll_act_question2_que3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGry"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_act_question2_que3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_unchecked" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_activity_que2_child_gain_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_act_question2_que3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:paddingLeft="20dp"
+                                android:text="@string/lbl_to_gain_weight"
+                                android:textColor="@color/colorFontGry"
+                                android:textSize="@dimen/txt_size_title"/>
+                            <!-- Inner view -->
+                            <LinearLayout
+                                android:id="@+id/ll_act_question2_que3_inner_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="left|center"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+                                <RadioGroup
+                                    android:id="@+id/rg_activity_question2_gain_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_gain_weight_250g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="250 g"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:textColor="@color/colorFontGry"/>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_gain_weight_500g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="500 g"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:textColor="@color/colorFontGry"/>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_gain_weight_750g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="750 g"
+                                        android:textColor="@color/colorFontGry"/>
+                                    <RadioButton
+                                        android:id="@+id/rb_activity_question2_gain_weight_1000g"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/txt_size_title"
+                                        android:text="1000 g"
+                                        android:textColor="@color/colorFontGry"/>
+                                </RadioGroup>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_frg_tab_goal_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="@dimen/txt_size_title"
+                        android:background="@color/colorOrange"
+                        android:padding="10dp"
+                        android:text="@string/btn_lbl_submit"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

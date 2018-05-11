@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGry"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_food_history_qty"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="500 gm"
+                android:textSize="@dimen/txt_size_title"
+                android:textColor="@color/colorOrange" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorLightSky" />
+
+            <TextView
+                android:id="@+id/tv_item_food_history_kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/txt_size_title"
+                android:text="12345 cal"
+                android:textColor="@color/colorOrange" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_item_food_history_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textColor="@color/colorFontGry"
+                android:textSize="@dimen/txt_size_heading" />
+
+            <TextView
+                android:id="@+id/tv_item_food_history_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/txt_size_title"
+                android:textColor="@color/colorDarkGry" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkGry"></View>
+
+</LinearLayout>
